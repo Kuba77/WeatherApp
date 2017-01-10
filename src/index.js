@@ -6,6 +6,7 @@ import store from './store';
 import App from './components/App/App';
 import './index.css';
 
+store.dispatch({ type: 'FETCH_WEATHER' });
 
 ReactDOM.render(
   <Provider store={store}>

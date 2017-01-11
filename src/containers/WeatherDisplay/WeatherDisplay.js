@@ -10,8 +10,8 @@ function WeatherDisplayContainer(props) {
 
 WeatherDisplayContainer.propTypes = {
   status: PropTypes.string.isRequired,
-  temperature: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  temperature: PropTypes.string,
+  text: PropTypes.string,
 };
 
 function mapStateToProps(state) {

@@ -22,8 +22,8 @@ function WeatherDisplay(props) {
 
 WeatherDisplay.propTypes = {
   status: PropTypes.string.isRequired,
-  temperature: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  temperature: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default WeatherDisplay;

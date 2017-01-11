@@ -22,7 +22,7 @@ function WeatherDisplay(props) {
 
 WeatherDisplay.propTypes = {
   status: PropTypes.string.isRequired,
-  temperature: PropTypes.number.isRequired,
+  temperature: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 

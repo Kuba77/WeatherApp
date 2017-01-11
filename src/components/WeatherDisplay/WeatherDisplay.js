@@ -7,7 +7,9 @@ function WeatherDisplay(props) {
 
   if (status === 'INITIAL') {
     return (
-      <img src={logo} className="App-logo" alt="logo" />
+      <div className="WeatherDisplay">
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
     );
   }
   return (

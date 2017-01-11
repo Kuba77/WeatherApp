@@ -6,7 +6,7 @@ import WeatherDisplay from '../../containers/WeatherDisplay/WeatherDisplay';
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-container">
         <h2>Welcome to Kuala Lumpur</h2>
         <WeatherDisplay />
       </div>

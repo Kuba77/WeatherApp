@@ -1,26 +1,24 @@
-import 'isomorphic-fetch'
+import 'isomorphic-fetch';
 
 const ENDPOINT = 'https://query.yahooapis.com/v1/public/';
 const KL_WOEID = 1154781;
 
 export function constructURL(query) {
-  return `${ENDPOINT}yql?q=${query}&format=json`
+  return `${ENDPOINT}yql?q=${query}&format=json`;
 }
 
 export function callApi(query) {
   const url = constructURL(query);
   return fetch(
     url,
-    {
-      method: 'get'
-    }
+    { method: 'get' },
   ).then(
-    response => response.json()
+    response => response.json(),
   ).then(
-    json => json.query.results.channel.item
+    json => json.query.results.channel.item,
   ).then(
     response => ({ response }),
-    error => ({ error: error.message || 'Undefined error' })
+    error => ({ error: error.message || 'Undefined error' }),
   );
 }
 

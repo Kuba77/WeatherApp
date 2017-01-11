@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-no-bind": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }]
+  },
+  "plugins": [
+    "import",
+    "promise",
+    "react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.eslint.js"
+      }
+    }
+  }
+}

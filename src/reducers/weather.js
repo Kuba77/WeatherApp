@@ -3,7 +3,7 @@ import Immutable from 'seamless-immutable';
 const defaultState = Immutable({
   status: 'INITIAL',
   temperature: null,
-  text: null
+  text: null,
 });
 
 export default function weather(state = defaultState, action) {
@@ -13,17 +13,16 @@ export default function weather(state = defaultState, action) {
       return {
         status: 'UPDATED',
         temperature,
-        text
-      }
-      break;
+        text,
+      };
     }
     case 'UPDATE_WEATHER_ERROR': {
       return {
         ...state,
-        status: 'ERROR'
-      }
+        status: 'ERROR',
+      };
     }
     default:
-      return state
+      return state;
   }
 }
